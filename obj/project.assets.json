@@ -1,0 +1,587 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "OpenTK/4.0.0-pre9.1": {
+        "type": "package",
+        "dependencies": {
+          "OpenToolkit.Core": "4.0.0-pre9.1",
+          "OpenToolkit.Graphics": "4.0.0-pre9.1",
+          "OpenToolkit.Input": "4.0.0-pre9.1",
+          "OpenToolkit.Mathematics": "4.0.0-pre9.1",
+          "OpenToolkit.OpenAL": "4.0.0-pre9.1",
+          "OpenToolkit.Windowing.Common": "4.0.0-pre9.1",
+          "OpenToolkit.Windowing.Desktop": "4.0.0-pre9.1",
+          "OpenToolkit.Windowing.GraphicsLibraryFramework": "4.0.0-pre9.1"
+        }
+      },
+      "OpenToolkit.Core/4.0.0-pre9.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/OpenToolkit.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OpenToolkit.Core.dll": {}
+        }
+      },
+      "OpenToolkit.Graphics/4.0.0-pre9.1": {
+        "type": "package",
+        "dependencies": {
+          "OpenToolkit.Core": "[4.0.0-pre9.1, 4.1.0-pre9)",
+          "OpenToolkit.Mathematics": "[4.0.0-pre9.1, 4.1.0-pre9)"
+        },
+        "compile": {
+          "lib/netstandard2.0/OpenToolkit.Graphics.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OpenToolkit.Graphics.dll": {}
+        }
+      },
+      "OpenToolkit.Input/4.0.0-pre9.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/OpenToolkit.Input.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OpenToolkit.Input.dll": {}
+        }
+      },
+      "OpenToolkit.Mathematics/4.0.0-pre9.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/OpenToolkit.Mathematics.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OpenToolkit.Mathematics.dll": {}
+        }
+      },
+      "OpenToolkit.OpenAL/4.0.0-pre9.1": {
+        "type": "package",
+        "dependencies": {
+          "OpenToolkit.Core": "[4.0.0-pre9.1, 4.1.0-pre9)",
+          "OpenToolkit.Mathematics": "[4.0.0-pre9.1, 4.1.0-pre9)"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/OpenToolkit.OpenAL.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/OpenToolkit.OpenAL.dll": {}
+        }
+      },
+      "opentoolkit.redist.glfw/3.3.0-pre20190419183326": {
+        "type": "package",
+        "build": {
+          "build/opentoolkit.redist.glfw.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libglfw.so.3.3": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/win-x64/native/glfw3-x64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/glfw3-x86.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "OpenToolkit.Windowing.Common/4.0.0-pre9.1": {
+        "type": "package",
+        "dependencies": {
+          "OpenToolkit.Core": "[4.0.0-pre9.1, 4.1.0-pre9)",
+          "OpenToolkit.Mathematics": "[4.0.0-pre9.1, 4.1.0-pre9)"
+        },
+        "compile": {
+          "lib/netstandard2.0/OpenToolkit.Windowing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OpenToolkit.Windowing.Common.dll": {}
+        }
+      },
+      "OpenToolkit.Windowing.Desktop/4.0.0-pre9.1": {
+        "type": "package",
+        "dependencies": {
+          "OpenToolkit.Core": "[4.0.0-pre9.1, 4.1.0-pre9)",
+          "OpenToolkit.Mathematics": "[4.0.0-pre9.1, 4.1.0-pre9)",
+          "OpenToolkit.Windowing.Common": "[4.0.0-pre9.1, 4.1.0-pre9)",
+          "OpenToolkit.Windowing.GraphicsLibraryFramework": "[4.0.0-pre9.1, 4.1.0-pre9)"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/OpenToolkit.Windowing.Desktop.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/OpenToolkit.Windowing.Desktop.dll": {}
+        }
+      },
+      "OpenToolkit.Windowing.GraphicsLibraryFramework/4.0.0-pre9.1": {
+        "type": "package",
+        "dependencies": {
+          "OpenToolkit.Core": "[4.0.0-pre9.1, 4.1.0-pre9)",
+          "opentoolkit.redist.glfw": "[3.3.0-pre20190419183326, 3.4.0-pre)"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/OpenToolkit.Windowing.GraphicsLibraryFramework.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/OpenToolkit.Windowing.GraphicsLibraryFramework.dll": {}
+        }
+      },
+      "SkiaSharp/2.80.0-preview.33": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SkiaSharp.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "SkiaSharp.Extended/1.60.0": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.60.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SkiaSharp.Extended.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SkiaSharp.Extended.dll": {}
+        }
+      },
+      "SkiaSharp.Svg/1.60.0": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "1.60.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SkiaSharp.Extended.Svg.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SkiaSharp.Extended.Svg.dll": {}
+        }
+      },
+      "System.Memory/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "NStuff.Runtime.InteropServices/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/NStuff.Runtime.InteropServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NStuff.Runtime.InteropServices.dll": {}
+        }
+      },
+      "NStuff.WindowSystem/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "NStuff.Runtime.InteropServices": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NStuff.WindowSystem.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NStuff.WindowSystem.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OpenTK/4.0.0-pre9.1": {
+      "sha512": "1t1R77WXhD1s5SiizuXscdJCdLN9NXtZYoaNgo4Z2NRtfJBZrzUMCxO1Cpk2Y6rBQRLRn6iSYck48VreCCyOiw==",
+      "type": "package",
+      "path": "opentk/4.0.0-pre9.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "opentk.4.0.0-pre9.1.nupkg.sha512",
+        "opentk.nuspec"
+      ]
+    },
+    "OpenToolkit.Core/4.0.0-pre9.1": {
+      "sha512": "xN+YxmmKctekJdqRjHQ/DEk3X7VopX35GSXB/D5/ySJuetO21weOdFXKMKmUNCUFo/bOknMLXPQpSquujtijPA==",
+      "type": "package",
+      "path": "opentoolkit.core/4.0.0-pre9.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/OpenToolkit.Core.dll",
+        "lib/netstandard2.0/OpenToolkit.Core.pdb",
+        "lib/netstandard2.0/OpenToolkit.Core.xml",
+        "opentoolkit.core.4.0.0-pre9.1.nupkg.sha512",
+        "opentoolkit.core.nuspec"
+      ]
+    },
+    "OpenToolkit.Graphics/4.0.0-pre9.1": {
+      "sha512": "4AVeN/ZpHxwrFqAdxSe6C5lCoY1uSXd7iZ7cD8IER6DaI0ngBAzM5dOn5nFD5pm1Zpb7cfb37lbCcc0UtlUyWA==",
+      "type": "package",
+      "path": "opentoolkit.graphics/4.0.0-pre9.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/OpenToolkit.Graphics.dll",
+        "lib/netstandard2.0/OpenToolkit.Graphics.pdb",
+        "lib/netstandard2.0/OpenToolkit.Graphics.xml",
+        "opentoolkit.graphics.4.0.0-pre9.1.nupkg.sha512",
+        "opentoolkit.graphics.nuspec"
+      ]
+    },
+    "OpenToolkit.Input/4.0.0-pre9.1": {
+      "sha512": "sEflQ7hvN/p3/xOB9P87N1YtLb3U8kpNKQaI4zPxGovM8zdDvcWZAEg955Q7YYW6BNdoXhURyKuU5gLEy1aLcg==",
+      "type": "package",
+      "path": "opentoolkit.input/4.0.0-pre9.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/OpenToolkit.Input.dll",
+        "lib/netstandard2.0/OpenToolkit.Input.pdb",
+        "lib/netstandard2.0/OpenToolkit.Input.xml",
+        "opentoolkit.input.4.0.0-pre9.1.nupkg.sha512",
+        "opentoolkit.input.nuspec"
+      ]
+    },
+    "OpenToolkit.Mathematics/4.0.0-pre9.1": {
+      "sha512": "xLxUbaWDbTFd9NXkRnOjeSR+gOko+dXfQbrj2128vkML0cJBzQ4CMKGrROUMRqChFRzZq05MbVePMPcoyBWfHw==",
+      "type": "package",
+      "path": "opentoolkit.mathematics/4.0.0-pre9.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/OpenToolkit.Mathematics.dll",
+        "lib/netstandard2.0/OpenToolkit.Mathematics.pdb",
+        "lib/netstandard2.0/OpenToolkit.Mathematics.xml",
+        "opentoolkit.mathematics.4.0.0-pre9.1.nupkg.sha512",
+        "opentoolkit.mathematics.nuspec"
+      ]
+    },
+    "OpenToolkit.OpenAL/4.0.0-pre9.1": {
+      "sha512": "RKWzxUiKCHKrkoKSH4mQQxLPd/s6DPXudpcJ5eI2DB9HkYLJSi5DMr3IGLfVFvsBdZF8InSKNUPaJaletSA5iQ==",
+      "type": "package",
+      "path": "opentoolkit.openal/4.0.0-pre9.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.1/OpenToolkit.OpenAL.dll",
+        "lib/netcoreapp3.1/OpenToolkit.OpenAL.pdb",
+        "lib/netcoreapp3.1/OpenToolkit.OpenAL.xml",
+        "opentoolkit.openal.4.0.0-pre9.1.nupkg.sha512",
+        "opentoolkit.openal.nuspec"
+      ]
+    },
+    "opentoolkit.redist.glfw/3.3.0-pre20190419183326": {
+      "sha512": "P5JbJnAovMfB8EuVZZxZ9iO98dfENN7l5KyXp5/Ctc55IgKCpl1Q+vqDZ+FUFoowBeFQM1jJI5mZCLn+/Yj3tQ==",
+      "type": "package",
+      "path": "opentoolkit.redist.glfw/3.3.0-pre20190419183326",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/opentoolkit.redist.glfw.targets",
+        "opentoolkit.redist.glfw.3.3.0-pre20190419183326.nupkg.sha512",
+        "opentoolkit.redist.glfw.nuspec",
+        "runtimes/linux-x64/native/libglfw.so.3.3",
+        "runtimes/win-x64/native/glfw3-x64.dll",
+        "runtimes/win-x86/native/glfw3-x86.dll"
+      ]
+    },
+    "OpenToolkit.Windowing.Common/4.0.0-pre9.1": {
+      "sha512": "Rpy68qPd4RLSdhYodbBWtrK8syILyrpSzygxLr6CZqOgJj/LDuew0V8z7wQ5Oz0ZJOyXWaZE3FzUZ6qKgDR0rg==",
+      "type": "package",
+      "path": "opentoolkit.windowing.common/4.0.0-pre9.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/OpenToolkit.Windowing.Common.dll",
+        "lib/netstandard2.0/OpenToolkit.Windowing.Common.pdb",
+        "lib/netstandard2.0/OpenToolkit.Windowing.Common.xml",
+        "opentoolkit.windowing.common.4.0.0-pre9.1.nupkg.sha512",
+        "opentoolkit.windowing.common.nuspec"
+      ]
+    },
+    "OpenToolkit.Windowing.Desktop/4.0.0-pre9.1": {
+      "sha512": "7IXGgDyx8vAKdUbZW0Zztabd+AFP0YS+5txwL/iedokQ4smkiXHK40169HLX1p0iW5VGjNcZpCII3bHufA705g==",
+      "type": "package",
+      "path": "opentoolkit.windowing.desktop/4.0.0-pre9.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/OpenToolkit.Windowing.Desktop.dll",
+        "lib/net472/OpenToolkit.Windowing.Desktop.pdb",
+        "lib/net472/OpenToolkit.Windowing.Desktop.xml",
+        "lib/netcoreapp3.0/OpenToolkit.Windowing.Desktop.dll",
+        "lib/netcoreapp3.0/OpenToolkit.Windowing.Desktop.pdb",
+        "lib/netcoreapp3.0/OpenToolkit.Windowing.Desktop.xml",
+        "opentoolkit.windowing.desktop.4.0.0-pre9.1.nupkg.sha512",
+        "opentoolkit.windowing.desktop.nuspec"
+      ]
+    },
+    "OpenToolkit.Windowing.GraphicsLibraryFramework/4.0.0-pre9.1": {
+      "sha512": "rv6bKwVMDCyYX07WjJ3yG4+mRV2AIpve+2BPhpNOZ8l9lCmAJD6Jj6kczAatV//rw249QWF/jYldC8xE0lHvLA==",
+      "type": "package",
+      "path": "opentoolkit.windowing.graphicslibraryframework/4.0.0-pre9.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/OpenToolkit.Windowing.GraphicsLibraryFramework.dll",
+        "lib/net472/OpenToolkit.Windowing.GraphicsLibraryFramework.pdb",
+        "lib/net472/OpenToolkit.Windowing.GraphicsLibraryFramework.xml",
+        "lib/netcoreapp3.0/OpenToolkit.Windowing.GraphicsLibraryFramework.dll",
+        "lib/netcoreapp3.0/OpenToolkit.Windowing.GraphicsLibraryFramework.pdb",
+        "lib/netcoreapp3.0/OpenToolkit.Windowing.GraphicsLibraryFramework.xml",
+        "opentoolkit.windowing.graphicslibraryframework.4.0.0-pre9.1.nupkg.sha512",
+        "opentoolkit.windowing.graphicslibraryframework.nuspec"
+      ]
+    },
+    "SkiaSharp/2.80.0-preview.33": {
+      "sha512": "MkptydfdLi7C1q/G9tf40nf3nz7NRUyXlYZmQsb7DZocEdr4DdnoYCugmO5i3A6apukUMGhCl0hbAfTDV1wZGA==",
+      "type": "package",
+      "path": "skiasharp/2.80.0-preview.33",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/monoandroid1.0/SkiaSharp.targets",
+        "build/monoandroid1.0/arm/libSkiaSharp.so",
+        "build/monoandroid1.0/arm64/libSkiaSharp.so",
+        "build/monoandroid1.0/x64/libSkiaSharp.so",
+        "build/monoandroid1.0/x86/libSkiaSharp.so",
+        "build/net462/SkiaSharp.targets",
+        "build/tizen40/SkiaSharp.targets",
+        "build/tizen40/arm/libSkiaSharp.so",
+        "build/tizen40/x86/libSkiaSharp.so",
+        "build/xamarinios1.0/SkiaSharp.targets",
+        "build/xamarinios1.0/libSkiaSharp.framework/Info.plist",
+        "build/xamarinios1.0/libSkiaSharp.framework/Modules/module.modulemap",
+        "build/xamarinios1.0/libSkiaSharp.framework/_CodeSignature/CodeResources",
+        "build/xamarinios1.0/libSkiaSharp.framework/libSkiaSharp",
+        "build/xamarinmac2.0/SkiaSharp.targets",
+        "build/xamarintvos1.0/SkiaSharp.targets",
+        "build/xamarintvos1.0/libSkiaSharp.framework/Info.plist",
+        "build/xamarintvos1.0/libSkiaSharp.framework/Modules/module.modulemap",
+        "build/xamarintvos1.0/libSkiaSharp.framework/_CodeSignature/CodeResources",
+        "build/xamarintvos1.0/libSkiaSharp.framework/libSkiaSharp",
+        "build/xamarinwatchos1.0/SkiaSharp.targets",
+        "build/xamarinwatchos1.0/libSkiaSharp.framework/Info.plist",
+        "build/xamarinwatchos1.0/libSkiaSharp.framework/Modules/module.modulemap",
+        "build/xamarinwatchos1.0/libSkiaSharp.framework/_CodeSignature/CodeResources",
+        "build/xamarinwatchos1.0/libSkiaSharp.framework/libSkiaSharp",
+        "buildTransitive/net462/SkiaSharp.targets",
+        "lib/monoandroid1.0/SkiaSharp.dll",
+        "lib/monoandroid1.0/SkiaSharp.xml",
+        "lib/net462/SkiaSharp.dll",
+        "lib/net462/SkiaSharp.xml",
+        "lib/netstandard1.3/SkiaSharp.dll",
+        "lib/netstandard1.3/SkiaSharp.xml",
+        "lib/netstandard2.0/SkiaSharp.dll",
+        "lib/netstandard2.0/SkiaSharp.xml",
+        "lib/tizen40/SkiaSharp.dll",
+        "lib/tizen40/SkiaSharp.xml",
+        "lib/uap10.0.10240/SkiaSharp.dll",
+        "lib/uap10.0.10240/SkiaSharp.xml",
+        "lib/uap10.0.16299/SkiaSharp.dll",
+        "lib/uap10.0.16299/SkiaSharp.xml",
+        "lib/xamarinios1.0/SkiaSharp.dll",
+        "lib/xamarinios1.0/SkiaSharp.xml",
+        "lib/xamarinmac2.0/SkiaSharp.dll",
+        "lib/xamarinmac2.0/SkiaSharp.xml",
+        "lib/xamarintvos1.0/SkiaSharp.dll",
+        "lib/xamarintvos1.0/SkiaSharp.xml",
+        "lib/xamarinwatchos1.0/SkiaSharp.dll",
+        "lib/xamarinwatchos1.0/SkiaSharp.xml",
+        "runtimes/osx/native/libSkiaSharp.dylib",
+        "runtimes/win-arm64/native/libSkiaSharp.dll",
+        "runtimes/win-x64/native/libSkiaSharp.dll",
+        "runtimes/win-x86/native/libSkiaSharp.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-arm64/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-arm64/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-arm64/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libSkiaSharp.dll",
+        "skiasharp.2.80.0-preview.33.nupkg.sha512",
+        "skiasharp.nuspec",
+        "xamarin.interactive/SkiaSharp.Workbooks.dll"
+      ]
+    },
+    "SkiaSharp.Extended/1.60.0": {
+      "sha512": "aN5NPB9F7JoLnuMR2a3ZcA5WIcgiaalt8W3JgUXzRCQb+Amphx6rIKWwK3uuA0OlVJY8A21Q8m5TqgnMubRniA==",
+      "type": "package",
+      "path": "skiasharp.extended/1.60.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.3/SkiaSharp.Extended.dll",
+        "lib/netstandard2.0/SkiaSharp.Extended.dll",
+        "lib/portable-net45+win8+wp8+wpa81/SkiaSharp.Extended.dll",
+        "skiasharp.extended.1.60.0.nupkg.sha512",
+        "skiasharp.extended.nuspec"
+      ]
+    },
+    "SkiaSharp.Svg/1.60.0": {
+      "sha512": "rTneyM6mt0w2xCCampFlkO3mGFIwGEJo7L2X3JOdyeMCZDQkyqv7m9kZfA89kLSErXErFnY72TZsryzqTIiT7g==",
+      "type": "package",
+      "path": "skiasharp.svg/1.60.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.3/SkiaSharp.Extended.Svg.dll",
+        "lib/netstandard2.0/SkiaSharp.Extended.Svg.dll",
+        "lib/portable-net45+win8+wp8+wpa81/SkiaSharp.Extended.Svg.dll",
+        "skiasharp.svg.1.60.0.nupkg.sha512",
+        "skiasharp.svg.nuspec"
+      ]
+    },
+    "System.Memory/4.5.3": {
+      "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "type": "package",
+      "path": "system.memory/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.3.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "NStuff.Runtime.InteropServices/1.0.0": {
+      "type": "project",
+      "path": "submodules/window-system/src/Runtime.InteropServices/Runtime.InteropServices.csproj",
+      "msbuildProject": "submodules/window-system/src/Runtime.InteropServices/Runtime.InteropServices.csproj"
+    },
+    "NStuff.WindowSystem/1.0.0": {
+      "type": "project",
+      "path": "submodules/window-system/src/WindowSystem/WindowSystem.csproj",
+      "msbuildProject": "submodules/window-system/src/WindowSystem/WindowSystem.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "NStuff.WindowSystem >= 1.0.0",
+      "OpenTK >= 4.0.0-pre9.1",
+      "SkiaSharp >= 2.80.0-preview.33",
+      "SkiaSharp.Extended >= 1.60.0",
+      "SkiaSharp.Svg >= 1.60.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/aidan/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/TextureJinn.csproj",
+      "projectName": "TextureJinn",
+      "projectPath": "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/TextureJinn.csproj",
+      "packagesPath": "/home/aidan/.nuget/packages/",
+      "outputPath": "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/aidan/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/submodules/window-system/src/WindowSystem/WindowSystem.csproj": {
+              "projectPath": "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/submodules/window-system/src/WindowSystem/WindowSystem.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "OpenTK": {
+            "target": "Package",
+            "version": "[4.0.0-pre9.1, )"
+          },
+          "SkiaSharp": {
+            "target": "Package",
+            "version": "[2.80.0-preview.33, )"
+          },
+          "SkiaSharp.Extended": {
+            "target": "Package",
+            "version": "[1.60.0, )"
+          },
+          "SkiaSharp.Svg": {
+            "target": "Package",
+            "version": "[1.60.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

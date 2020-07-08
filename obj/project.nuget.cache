@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "ImFbXozWLJpXWl9YTgwvnySeez2p0GaAWc0IM5XWTZpFzX0arLxdXPw39pzSql1hfVdN+3Ya9Ab6bmj6BV/ABw==",
+  "success": true,
+  "projectFilePath": "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/TextureJinn.csproj",
+  "expectedPackageFiles": [
+    "/home/aidan/.nuget/packages/opentk/4.0.0-pre9.1/opentk.4.0.0-pre9.1.nupkg.sha512",
+    "/home/aidan/.nuget/packages/opentoolkit.core/4.0.0-pre9.1/opentoolkit.core.4.0.0-pre9.1.nupkg.sha512",
+    "/home/aidan/.nuget/packages/opentoolkit.graphics/4.0.0-pre9.1/opentoolkit.graphics.4.0.0-pre9.1.nupkg.sha512",
+    "/home/aidan/.nuget/packages/opentoolkit.input/4.0.0-pre9.1/opentoolkit.input.4.0.0-pre9.1.nupkg.sha512",
+    "/home/aidan/.nuget/packages/opentoolkit.mathematics/4.0.0-pre9.1/opentoolkit.mathematics.4.0.0-pre9.1.nupkg.sha512",
+    "/home/aidan/.nuget/packages/opentoolkit.openal/4.0.0-pre9.1/opentoolkit.openal.4.0.0-pre9.1.nupkg.sha512",
+    "/home/aidan/.nuget/packages/opentoolkit.redist.glfw/3.3.0-pre20190419183326/opentoolkit.redist.glfw.3.3.0-pre20190419183326.nupkg.sha512",
+    "/home/aidan/.nuget/packages/opentoolkit.windowing.common/4.0.0-pre9.1/opentoolkit.windowing.common.4.0.0-pre9.1.nupkg.sha512",
+    "/home/aidan/.nuget/packages/opentoolkit.windowing.desktop/4.0.0-pre9.1/opentoolkit.windowing.desktop.4.0.0-pre9.1.nupkg.sha512",
+    "/home/aidan/.nuget/packages/opentoolkit.windowing.graphicslibraryframework/4.0.0-pre9.1/opentoolkit.windowing.graphicslibraryframework.4.0.0-pre9.1.nupkg.sha512",
+    "/home/aidan/.nuget/packages/skiasharp/2.80.0-preview.33/skiasharp.2.80.0-preview.33.nupkg.sha512",
+    "/home/aidan/.nuget/packages/skiasharp.extended/1.60.0/skiasharp.extended.1.60.0.nupkg.sha512",
+    "/home/aidan/.nuget/packages/skiasharp.svg/1.60.0/skiasharp.svg.1.60.0.nupkg.sha512",
+    "/home/aidan/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

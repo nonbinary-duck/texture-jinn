@@ -1,0 +1,430 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "TextureJinn/1.0.0": {
+        "dependencies": {
+          "GtkSharp": "3.22.25.98",
+          "OpenTK": "4.0.0-pre9.1",
+          "SkiaSharp": "2.80.0-preview.33",
+          "SkiaSharp.Extended": "1.60.0",
+          "SkiaSharp.Svg": "1.60.0"
+        },
+        "runtime": {
+          "TextureJinn.dll": {}
+        }
+      },
+      "AtkSharp/3.22.25.98": {
+        "dependencies": {
+          "GLibSharp": "3.22.25.98"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AtkSharp.dll": {
+            "assemblyVersion": "3.22.25.98",
+            "fileVersion": "3.22.25.98"
+          }
+        }
+      },
+      "CairoSharp/3.22.25.98": {
+        "runtime": {
+          "lib/netstandard2.0/CairoSharp.dll": {
+            "assemblyVersion": "3.22.25.98",
+            "fileVersion": "3.22.25.98"
+          }
+        }
+      },
+      "GdkSharp/3.22.25.98": {
+        "dependencies": {
+          "CairoSharp": "3.22.25.98",
+          "GLibSharp": "3.22.25.98",
+          "GioSharp": "3.22.25.98",
+          "PangoSharp": "3.22.25.98"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GdkSharp.dll": {
+            "assemblyVersion": "3.22.25.98",
+            "fileVersion": "3.22.25.98"
+          }
+        }
+      },
+      "GioSharp/3.22.25.98": {
+        "dependencies": {
+          "GLibSharp": "3.22.25.98"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GioSharp.dll": {
+            "assemblyVersion": "3.22.25.98",
+            "fileVersion": "3.22.25.98"
+          }
+        }
+      },
+      "GLibSharp/3.22.25.98": {
+        "runtime": {
+          "lib/netstandard2.0/GLibSharp.dll": {
+            "assemblyVersion": "3.22.25.98",
+            "fileVersion": "3.22.25.98"
+          }
+        }
+      },
+      "GtkSharp/3.22.25.98": {
+        "dependencies": {
+          "AtkSharp": "3.22.25.98",
+          "CairoSharp": "3.22.25.98",
+          "GLibSharp": "3.22.25.98",
+          "GdkSharp": "3.22.25.98",
+          "GioSharp": "3.22.25.98",
+          "PangoSharp": "3.22.25.98"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GtkSharp.dll": {
+            "assemblyVersion": "3.22.25.98",
+            "fileVersion": "3.22.25.98"
+          }
+        }
+      },
+      "OpenTK/4.0.0-pre9.1": {
+        "dependencies": {
+          "OpenToolkit.Core": "4.0.0-pre9.1",
+          "OpenToolkit.Graphics": "4.0.0-pre9.1",
+          "OpenToolkit.Input": "4.0.0-pre9.1",
+          "OpenToolkit.Mathematics": "4.0.0-pre9.1",
+          "OpenToolkit.OpenAL": "4.0.0-pre9.1",
+          "OpenToolkit.Windowing.Common": "4.0.0-pre9.1",
+          "OpenToolkit.Windowing.Desktop": "4.0.0-pre9.1",
+          "OpenToolkit.Windowing.GraphicsLibraryFramework": "4.0.0-pre9.1"
+        }
+      },
+      "OpenToolkit.Core/4.0.0-pre9.1": {
+        "runtime": {
+          "lib/netstandard2.0/OpenToolkit.Core.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "OpenToolkit.Graphics/4.0.0-pre9.1": {
+        "dependencies": {
+          "OpenToolkit.Core": "4.0.0-pre9.1",
+          "OpenToolkit.Mathematics": "4.0.0-pre9.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/OpenToolkit.Graphics.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "OpenToolkit.Input/4.0.0-pre9.1": {
+        "runtime": {
+          "lib/netstandard2.0/OpenToolkit.Input.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "OpenToolkit.Mathematics/4.0.0-pre9.1": {
+        "runtime": {
+          "lib/netstandard2.0/OpenToolkit.Mathematics.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "OpenToolkit.OpenAL/4.0.0-pre9.1": {
+        "dependencies": {
+          "OpenToolkit.Core": "4.0.0-pre9.1",
+          "OpenToolkit.Mathematics": "4.0.0-pre9.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/OpenToolkit.OpenAL.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "opentoolkit.redist.glfw/3.3.0-pre20190419183326": {
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libglfw.so.3.3": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/glfw3-x64.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/glfw3-x86.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "OpenToolkit.Windowing.Common/4.0.0-pre9.1": {
+        "dependencies": {
+          "OpenToolkit.Core": "4.0.0-pre9.1",
+          "OpenToolkit.Mathematics": "4.0.0-pre9.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/OpenToolkit.Windowing.Common.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "OpenToolkit.Windowing.Desktop/4.0.0-pre9.1": {
+        "dependencies": {
+          "OpenToolkit.Core": "4.0.0-pre9.1",
+          "OpenToolkit.Mathematics": "4.0.0-pre9.1",
+          "OpenToolkit.Windowing.Common": "4.0.0-pre9.1",
+          "OpenToolkit.Windowing.GraphicsLibraryFramework": "4.0.0-pre9.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/OpenToolkit.Windowing.Desktop.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "OpenToolkit.Windowing.GraphicsLibraryFramework/4.0.0-pre9.1": {
+        "dependencies": {
+          "OpenToolkit.Core": "4.0.0-pre9.1",
+          "opentoolkit.redist.glfw": "3.3.0-pre20190419183326"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/OpenToolkit.Windowing.GraphicsLibraryFramework.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "PangoSharp/3.22.25.98": {
+        "dependencies": {
+          "CairoSharp": "3.22.25.98",
+          "GLibSharp": "3.22.25.98"
+        },
+        "runtime": {
+          "lib/netstandard2.0/PangoSharp.dll": {
+            "assemblyVersion": "3.22.25.98",
+            "fileVersion": "3.22.25.98"
+          }
+        }
+      },
+      "SkiaSharp/2.80.0-preview.33": {
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SkiaSharp.dll": {
+            "assemblyVersion": "2.80.0.0",
+            "fileVersion": "2.80.0.0"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SkiaSharp.Extended/1.60.0": {
+        "dependencies": {
+          "SkiaSharp": "2.80.0-preview.33"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SkiaSharp.Extended.dll": {
+            "assemblyVersion": "1.60.0.0",
+            "fileVersion": "1.60.0.0"
+          }
+        }
+      },
+      "SkiaSharp.Svg/1.60.0": {
+        "dependencies": {
+          "SkiaSharp": "2.80.0-preview.33"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SkiaSharp.Extended.Svg.dll": {
+            "assemblyVersion": "1.60.0.0",
+            "fileVersion": "1.60.0.0"
+          }
+        }
+      },
+      "System.Memory/4.5.3": {}
+    }
+  },
+  "libraries": {
+    "TextureJinn/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AtkSharp/3.22.25.98": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P5aeoWgfquIsNxwJGZiVZN6WJflbn5tOGCJY8JeUIN4TVjSS7ZHcMOJoVc0jmnDLz+o8iDkVoBvDxy9GUB2xhQ==",
+      "path": "atksharp/3.22.25.98",
+      "hashPath": "atksharp.3.22.25.98.nupkg.sha512"
+    },
+    "CairoSharp/3.22.25.98": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5urvyqO4fee0Vf3KUOKvrTU8SocexwrpqDpu9gQT2lKPYjsea43B11nfz1rhekBJwuWs331xaC6bDTix6FUv9Q==",
+      "path": "cairosharp/3.22.25.98",
+      "hashPath": "cairosharp.3.22.25.98.nupkg.sha512"
+    },
+    "GdkSharp/3.22.25.98": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eJTIFGCLKhHt/Sk2VWAK7A4nVmoxSLF++K2RMFZLDF1cHtbF5NminOx8BSwBWPnsI7sUJb6idOc71m7LiVSSWA==",
+      "path": "gdksharp/3.22.25.98",
+      "hashPath": "gdksharp.3.22.25.98.nupkg.sha512"
+    },
+    "GioSharp/3.22.25.98": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JB9ncI79eZkCS25T5R4nKbymUDSHb7xZVdPJph4IYgsJN0XvMLHP+hGmj7ibfgXKDwlwhzk9Aqhm+x3sFmm2BA==",
+      "path": "giosharp/3.22.25.98",
+      "hashPath": "giosharp.3.22.25.98.nupkg.sha512"
+    },
+    "GLibSharp/3.22.25.98": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PUen65nYJQ324oTdNjVPQcW8NgOkdQusBty2gAQU2xjgnrz0g2TEj/Q56u8gZqywWlYzRyhRTAmOqdgCC36tCg==",
+      "path": "glibsharp/3.22.25.98",
+      "hashPath": "glibsharp.3.22.25.98.nupkg.sha512"
+    },
+    "GtkSharp/3.22.25.98": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LJJsVFMHBdz8VEXjGok1YfabS38d5hqRq6dx6HdH9HWhxmhDN31HBSfEmCgq70aoB3x/F0JymxEyKfwrS2UsJA==",
+      "path": "gtksharp/3.22.25.98",
+      "hashPath": "gtksharp.3.22.25.98.nupkg.sha512"
+    },
+    "OpenTK/4.0.0-pre9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1t1R77WXhD1s5SiizuXscdJCdLN9NXtZYoaNgo4Z2NRtfJBZrzUMCxO1Cpk2Y6rBQRLRn6iSYck48VreCCyOiw==",
+      "path": "opentk/4.0.0-pre9.1",
+      "hashPath": "opentk.4.0.0-pre9.1.nupkg.sha512"
+    },
+    "OpenToolkit.Core/4.0.0-pre9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xN+YxmmKctekJdqRjHQ/DEk3X7VopX35GSXB/D5/ySJuetO21weOdFXKMKmUNCUFo/bOknMLXPQpSquujtijPA==",
+      "path": "opentoolkit.core/4.0.0-pre9.1",
+      "hashPath": "opentoolkit.core.4.0.0-pre9.1.nupkg.sha512"
+    },
+    "OpenToolkit.Graphics/4.0.0-pre9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4AVeN/ZpHxwrFqAdxSe6C5lCoY1uSXd7iZ7cD8IER6DaI0ngBAzM5dOn5nFD5pm1Zpb7cfb37lbCcc0UtlUyWA==",
+      "path": "opentoolkit.graphics/4.0.0-pre9.1",
+      "hashPath": "opentoolkit.graphics.4.0.0-pre9.1.nupkg.sha512"
+    },
+    "OpenToolkit.Input/4.0.0-pre9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sEflQ7hvN/p3/xOB9P87N1YtLb3U8kpNKQaI4zPxGovM8zdDvcWZAEg955Q7YYW6BNdoXhURyKuU5gLEy1aLcg==",
+      "path": "opentoolkit.input/4.0.0-pre9.1",
+      "hashPath": "opentoolkit.input.4.0.0-pre9.1.nupkg.sha512"
+    },
+    "OpenToolkit.Mathematics/4.0.0-pre9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xLxUbaWDbTFd9NXkRnOjeSR+gOko+dXfQbrj2128vkML0cJBzQ4CMKGrROUMRqChFRzZq05MbVePMPcoyBWfHw==",
+      "path": "opentoolkit.mathematics/4.0.0-pre9.1",
+      "hashPath": "opentoolkit.mathematics.4.0.0-pre9.1.nupkg.sha512"
+    },
+    "OpenToolkit.OpenAL/4.0.0-pre9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RKWzxUiKCHKrkoKSH4mQQxLPd/s6DPXudpcJ5eI2DB9HkYLJSi5DMr3IGLfVFvsBdZF8InSKNUPaJaletSA5iQ==",
+      "path": "opentoolkit.openal/4.0.0-pre9.1",
+      "hashPath": "opentoolkit.openal.4.0.0-pre9.1.nupkg.sha512"
+    },
+    "opentoolkit.redist.glfw/3.3.0-pre20190419183326": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P5JbJnAovMfB8EuVZZxZ9iO98dfENN7l5KyXp5/Ctc55IgKCpl1Q+vqDZ+FUFoowBeFQM1jJI5mZCLn+/Yj3tQ==",
+      "path": "opentoolkit.redist.glfw/3.3.0-pre20190419183326",
+      "hashPath": "opentoolkit.redist.glfw.3.3.0-pre20190419183326.nupkg.sha512"
+    },
+    "OpenToolkit.Windowing.Common/4.0.0-pre9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rpy68qPd4RLSdhYodbBWtrK8syILyrpSzygxLr6CZqOgJj/LDuew0V8z7wQ5Oz0ZJOyXWaZE3FzUZ6qKgDR0rg==",
+      "path": "opentoolkit.windowing.common/4.0.0-pre9.1",
+      "hashPath": "opentoolkit.windowing.common.4.0.0-pre9.1.nupkg.sha512"
+    },
+    "OpenToolkit.Windowing.Desktop/4.0.0-pre9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7IXGgDyx8vAKdUbZW0Zztabd+AFP0YS+5txwL/iedokQ4smkiXHK40169HLX1p0iW5VGjNcZpCII3bHufA705g==",
+      "path": "opentoolkit.windowing.desktop/4.0.0-pre9.1",
+      "hashPath": "opentoolkit.windowing.desktop.4.0.0-pre9.1.nupkg.sha512"
+    },
+    "OpenToolkit.Windowing.GraphicsLibraryFramework/4.0.0-pre9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rv6bKwVMDCyYX07WjJ3yG4+mRV2AIpve+2BPhpNOZ8l9lCmAJD6Jj6kczAatV//rw249QWF/jYldC8xE0lHvLA==",
+      "path": "opentoolkit.windowing.graphicslibraryframework/4.0.0-pre9.1",
+      "hashPath": "opentoolkit.windowing.graphicslibraryframework.4.0.0-pre9.1.nupkg.sha512"
+    },
+    "PangoSharp/3.22.25.98": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ye1cN7KssRwUUB/1FKyUNWS599O+W+sCf7BP1U5h2VcnFXmxjkRq1AxvDWTGnKQpdWJrP2nGwqUKmGANhMu/1Q==",
+      "path": "pangosharp/3.22.25.98",
+      "hashPath": "pangosharp.3.22.25.98.nupkg.sha512"
+    },
+    "SkiaSharp/2.80.0-preview.33": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MkptydfdLi7C1q/G9tf40nf3nz7NRUyXlYZmQsb7DZocEdr4DdnoYCugmO5i3A6apukUMGhCl0hbAfTDV1wZGA==",
+      "path": "skiasharp/2.80.0-preview.33",
+      "hashPath": "skiasharp.2.80.0-preview.33.nupkg.sha512"
+    },
+    "SkiaSharp.Extended/1.60.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aN5NPB9F7JoLnuMR2a3ZcA5WIcgiaalt8W3JgUXzRCQb+Amphx6rIKWwK3uuA0OlVJY8A21Q8m5TqgnMubRniA==",
+      "path": "skiasharp.extended/1.60.0",
+      "hashPath": "skiasharp.extended.1.60.0.nupkg.sha512"
+    },
+    "SkiaSharp.Svg/1.60.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rTneyM6mt0w2xCCampFlkO3mGFIwGEJo7L2X3JOdyeMCZDQkyqv7m9kZfA89kLSErXErFnY72TZsryzqTIiT7g==",
+      "path": "skiasharp.svg/1.60.0",
+      "hashPath": "skiasharp.svg.1.60.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    }
+  }
+}

@@ -1,0 +1,3 @@
+[submodule "submodules/window-system"]
+	path = submodules/window-system
+	url = git@github.com:n-stuff/window-system.git
