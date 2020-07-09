@@ -1,4 +1,4 @@
-using Gtk;
+using Avalonia.Controls;
 
 using System.Collections.Generic;
 
@@ -10,7 +10,7 @@ namespace TextureJinn.Rendering.Windowing.WindowMods
         public void ModifyWindow(ref Window window)
         {
             SortByPriority();
-            
+
             for (int i = 0; i < Count; i++)
             {
                 System.Console.WriteLine(this[i].Priority);

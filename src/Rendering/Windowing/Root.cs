@@ -1,4 +1,6 @@
-using Gtk;
+using Avalonia;
+using Avalonia.Controls;
+using Avalonia.ReactiveUI;
 
 using System;
 using System.Collections.Generic;
@@ -10,39 +12,21 @@ using TextureJinn.Rendering.Windowing.WindowMods;
 
 namespace TextureJinn.Rendering.Windowing
 {
-    class Root
+    class Root : Application
     {
-        protected Window m_root;
+        protected Window m_window;
 
         public Root()
         {
-            Application.Init();
-
-            m_root = new Window("Texture Jinn");
-
-            m_root.DeleteEvent += DeleteEvent;
+            m_window = new Window();
         }
 
         public void Start()
         {
-            WindowCompiler mods = new WindowCompiler();
-            mods.Add(new RemoveBorders());
+            // WindowCompiler mods = new WindowCompiler();
+            // mods.Add(new RemoveBorders());
 
-            mods.ModifyWindow(ref m_root);
-
-            m_root.ShowAll();
-
-            Application.Run();
-        }
-
-        private void DeleteEvent(object obj, DeleteEventArgs args)
-        {
-            Application.Quit();
-        }
-
-        private void Hello(object obj, EventArgs args)
-        {
-            Console.WriteLine("Hello World");
+            // mods.ModifyWindow(ref m_window);
         }
     }
 }

@@ -1,5 +1,5 @@
-using Cairo;
-using Gtk;
+using Avalonia;
+using Avalonia.Controls;
 
 
 namespace TextureJinn.Rendering.Windowing.WindowMods
@@ -14,14 +14,9 @@ namespace TextureJinn.Rendering.Windowing.WindowMods
 
         public void ApplyToWindow(ref Window window)
         {
-            window.Resizable = true;
-            window.AppPaintable = true;
+            window.BorderThickness = new Thickness(0);
 
             // window.ScreenChanged += ScreenChanged;
-        }
-
-        protected void ScreenChanged(object o, ScreenChangedArgs args) {
-            
         }
     }
 }

@@ -24,11 +24,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {
-              "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/submodules/window-system/src/WindowSystem/WindowSystem.csproj": {
-                "projectPath": "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/submodules/window-system/src/WindowSystem/WindowSystem.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -40,6 +36,22 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Avalonia": {
+              "target": "Package",
+              "version": "[0.10.0-preview1, )"
+            },
+            "Avalonia.Desktop": {
+              "target": "Package",
+              "version": "[0.10.0-preview1, )"
+            },
+            "Avalonia.Native": {
+              "target": "Package",
+              "version": "[0.10.0-preview1, )"
+            },
+            "Avalonia.ReactiveUI": {
+              "target": "Package",
+              "version": "[0.10.0-preview1, )"
+            },
             "OpenTK": {
               "target": "Package",
               "version": "[4.0.0-pre9.1, )"
@@ -69,110 +81,6 @@
           "warn": true,
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/submodules/window-system/src/Runtime.InteropServices/Runtime.InteropServices.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/submodules/window-system/src/Runtime.InteropServices/Runtime.InteropServices.csproj",
-        "projectName": "NStuff.Runtime.InteropServices",
-        "projectPath": "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/submodules/window-system/src/Runtime.InteropServices/Runtime.InteropServices.csproj",
-        "packagesPath": "/home/aidan/.nuget/packages/",
-        "outputPath": "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/submodules/window-system/src/Runtime.InteropServices/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/home/aidan/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "netstandard2.1"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netstandard2.1": {
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netstandard2.1": {
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "NETStandard.Library": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/submodules/window-system/src/WindowSystem/WindowSystem.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/submodules/window-system/src/WindowSystem/WindowSystem.csproj",
-        "projectName": "NStuff.WindowSystem",
-        "projectPath": "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/submodules/window-system/src/WindowSystem/WindowSystem.csproj",
-        "packagesPath": "/home/aidan/.nuget/packages/",
-        "outputPath": "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/submodules/window-system/src/WindowSystem/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/home/aidan/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "netstandard2.1"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netstandard2.1": {
-            "projectReferences": {
-              "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/submodules/window-system/src/Runtime.InteropServices/Runtime.InteropServices.csproj": {
-                "projectPath": "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/submodules/window-system/src/Runtime.InteropServices/Runtime.InteropServices.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netstandard2.1": {
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "NETStandard.Library": {
               "privateAssets": "all"
             }
           },
