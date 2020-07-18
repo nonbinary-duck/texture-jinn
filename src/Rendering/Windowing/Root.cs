@@ -1,32 +1,26 @@
 using Avalonia;
 using Avalonia.Controls;
-using Avalonia.ReactiveUI;
+using Avalonia.Controls.ApplicationLifetimes;
 
 using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
+using TextureJinn.Rendering.Windowing.xaml;
+using TextureJinn.Rendering.Windowing.xaml.pages;
 using TextureJinn.Rendering.Windowing.WindowMods;
 
 
 namespace TextureJinn.Rendering.Windowing
 {
-    class Root : Application
+    class Root
     {
-        protected Window m_window;
-
         public Root()
         {
-            m_window = new Window();
+            BuildApp().StartWithClassicDesktopLifetime(new string[0]);
         }
 
-        public void Start()
-        {
-            // WindowCompiler mods = new WindowCompiler();
-            // mods.Add(new RemoveBorders());
-
-            // mods.ModifyWindow(ref m_window);
-        }
+        protected AppBuilder BuildApp() => AppBuilder.Configure<App>().UseSkia().UsePlatformDetect();
     }
 }

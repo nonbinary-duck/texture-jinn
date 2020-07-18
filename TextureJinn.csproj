@@ -4,13 +4,21 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="**\*.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <AvaloniaResource Include="**\*.xaml">
+      <SubType>Designer</SubType>
+    </AvaloniaResource>
+    <AvaloniaResource Include="Assets\*"/>
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="OpenTK" Version="4.0.0-pre9.1"/>
-    <PackageReference Include="SkiaSharp" Version="2.80.0-preview.33"/>
-    <PackageReference Include="SkiaSharp.Extended" Version="1.60.0"/>
-    <PackageReference Include="SkiaSharp.Svg" Version="1.60.0"/>
     <PackageReference Include="Avalonia" Version="0.10.0-preview1"/>
     <PackageReference Include="Avalonia.Native" Version="0.10.0-preview1"/>
     <PackageReference Include="Avalonia.Desktop" Version="0.10.0-preview1"/>
     <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.0-preview1"/>
+    <PackageReference Include="SkiaSharp.Svg" Version="1.60.0"/>
+    <PackageReference Include="Svg.Skia" Version="0.3.0"/>
   </ItemGroup>
 </Project>

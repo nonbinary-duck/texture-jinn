@@ -24,7 +24,8 @@
 /home/aidan/.nuget/packages/avalonia.win32/0.10.0-preview1/lib/netstandard2.0/Avalonia.Win32.dll
 /home/aidan/.nuget/packages/avalonia.x11/0.10.0-preview1/lib/netstandard2.0/Avalonia.X11.dll
 /home/aidan/.nuget/packages/dynamicdata/6.13.9/lib/netstandard2.0/DynamicData.dll
-/home/aidan/.nuget/packages/harfbuzzsharp/2.6.1/lib/netstandard1.3/HarfBuzzSharp.dll
+/home/aidan/.nuget/packages/fizzler/1.2.0/lib/netstandard2.0/Fizzler.dll
+/home/aidan/.nuget/packages/harfbuzzsharp/2.6.1.3/lib/netstandard2.0/HarfBuzzSharp.dll
 /home/aidan/.nuget/packages/jetbrains.annotations/10.3.0/lib/netstandard1.0/JetBrains.Annotations.dll
 /usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/3.1.0/ref/netcoreapp3.1/Microsoft.CSharp.dll
 /usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/3.1.0/ref/netcoreapp3.1/Microsoft.VisualBasic.Core.dll
@@ -43,10 +44,12 @@
 /home/aidan/.nuget/packages/reactiveui/10.3.6/lib/netcoreapp3.0/ReactiveUI.dll
 /home/aidan/.nuget/packages/sharpgen.runtime.com/1.2.0/lib/netstandard1.1/SharpGen.Runtime.COM.dll
 /home/aidan/.nuget/packages/sharpgen.runtime/1.2.1/lib/netstandard2.0/SharpGen.Runtime.dll
-/home/aidan/.nuget/packages/skiasharp/2.80.0-preview.33/lib/netstandard2.0/SkiaSharp.dll
-/home/aidan/.nuget/packages/skiasharp.extended/1.60.0/lib/netstandard2.0/SkiaSharp.Extended.dll
+/home/aidan/.nuget/packages/skiasharp/1.68.2.1/lib/netstandard2.0/SkiaSharp.dll
 /home/aidan/.nuget/packages/skiasharp.svg/1.60.0/lib/netstandard2.0/SkiaSharp.Extended.Svg.dll
+/home/aidan/.nuget/packages/skiasharp.harfbuzz/1.68.2.1/lib/netstandard2.0/SkiaSharp.HarfBuzz.dll
 /home/aidan/.nuget/packages/splat/9.0.5/lib/netstandard2.0/Splat.dll
+/home/aidan/.nuget/packages/svg.custom/0.3.0/lib/netcoreapp3.1/Svg.Custom.dll
+/home/aidan/.nuget/packages/svg.skia/0.3.0/lib/netcoreapp3.1/Svg.Skia.dll
 /usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/3.1.0/ref/netcoreapp3.1/System.AppContext.dll
 /usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/3.1.0/ref/netcoreapp3.1/System.Buffers.dll
 /usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/3.1.0/ref/netcoreapp3.1/System.Collections.Concurrent.dll
@@ -77,7 +80,7 @@
 /usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/3.1.0/ref/netcoreapp3.1/System.Diagnostics.TraceSource.dll
 /usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/3.1.0/ref/netcoreapp3.1/System.Diagnostics.Tracing.dll
 /usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/3.1.0/ref/netcoreapp3.1/System.dll
-/home/aidan/.nuget/packages/system.drawing.common/4.5.0/ref/netstandard2.0/System.Drawing.Common.dll
+/home/aidan/.nuget/packages/system.drawing.common/4.7.0/ref/netcoreapp3.0/System.Drawing.Common.dll
 /usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/3.1.0/ref/netcoreapp3.1/System.Drawing.dll
 /usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/3.1.0/ref/netcoreapp3.1/System.Drawing.Primitives.dll
 /usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/3.1.0/ref/netcoreapp3.1/System.Dynamic.Runtime.dll

@@ -56,17 +56,13 @@
               "target": "Package",
               "version": "[4.0.0-pre9.1, )"
             },
-            "SkiaSharp": {
-              "target": "Package",
-              "version": "[2.80.0-preview.33, )"
-            },
-            "SkiaSharp.Extended": {
-              "target": "Package",
-              "version": "[1.60.0, )"
-            },
             "SkiaSharp.Svg": {
               "target": "Package",
               "version": "[1.60.0, )"
+            },
+            "Svg.Skia": {
+              "target": "Package",
+              "version": "[0.3.0, )"
             }
           },
           "imports": [

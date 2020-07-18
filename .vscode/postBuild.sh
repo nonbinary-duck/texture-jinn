@@ -1,0 +1,1 @@
+mv src/bin ./bin

@@ -3,6 +3,7 @@
     "tasks": [
         {
             "label": "build",
+            "group": "build",
             "command": "dotnet",
             "type": "process",
             "args": [
@@ -13,6 +14,13 @@
             ],
             "problemMatcher": "$msCompile"
         },
+        // {
+        //     "label": "test-",
+        //     "group": "build",
+        //     "command": "cd tests && dotnet test",
+        //     "type": "shell",
+        //     "problemMatcher": "$msCompile"
+        // },
         {
             "label": "publish",
             "command": "dotnet",
