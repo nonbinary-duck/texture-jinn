@@ -28,7 +28,7 @@ namespace TextureJinn
 
             for (int i = 0; i < 1; i++)
             {
-                svg.Render(new Rendering.Rasterisation.Vector2Di(1000, 1000), "test.png", SKEncodedImageFormat.Png);
+                svg.Render(new Rendering.Rasterisation.Vector2Di(1000, 1000), "test.bmp", SKEncodedImageFormat.Bmp);
             }
 
             DateTime end = DateTime.Now;

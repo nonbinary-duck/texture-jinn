@@ -37,15 +37,18 @@ namespace TextureJinn.Rendering.Rasterisation.SVG
                 svg.Load(stream);
 
                 FakeStream output = new FakeStream();
-                SKPictureRecorder picRec = new SKPictureRecorder();
-                
-                var canvas = picRec.BeginRecording(SKRect.Create(size.X, size.Y));
-                canvas.DrawPicture(svg.Picture);
-                
-                picRec.EndRecording().ToBitmap(SKColor.Empty, 1f, 1f, SKColorType.Argb4444, SKAlphaType.Opaque).Encode(output, format, 100);
-                // SKCanvas canvas = new SKCanvas(new SKBitmap(size.X, size.Y));
-                // canvas.DrawPicture(svg.Picture);
-                
+
+                Vector2Di scale = new Vector2Di();
+                Vector2D renderedSize = new Vector2Di(svg.Picture.CullRect.Size.Width, svg.Picture.CullRect.Size.Height);
+
+                if (size.X == -1)
+                {
+                    float sFac = 
+                }
+
+                SKImage image = SKImage.FromBitmap(svg.Picture.ToBitmap(SKColor.Empty, 3f, 3f, SKColorType.Rgba8888, SKAlphaType.Premul));
+                image.Encode(format, 100).SaveTo(output);
+                System.Console.WriteLine(output.Length);
 
                 // svg.Save(output, SKColor.Empty, format, 100, 1f, 1f);
                 

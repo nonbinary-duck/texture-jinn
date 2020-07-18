@@ -10,5 +10,11 @@ namespace TextureJinn.Rendering.Rasterisation
             X = x;
             Y = y;
         }
+
+        public Vector2Di()
+        {
+            X = 0;
+            Y = 0;
+        }
     }
 }
