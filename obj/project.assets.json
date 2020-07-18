@@ -6404,11 +6404,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/TextureJinn.csproj",
+      "projectUniqueName": "/home/aidan/Documents/Code/texture-jinn/TextureJinn.csproj",
       "projectName": "TextureJinn",
-      "projectPath": "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/TextureJinn.csproj",
+      "projectPath": "/home/aidan/Documents/Code/texture-jinn/TextureJinn.csproj",
       "packagesPath": "/home/aidan/.nuget/packages/",
-      "outputPath": "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/obj/",
+      "outputPath": "/home/aidan/Documents/Code/texture-jinn/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/aidan/.nuget/NuGet/NuGet.Config"
@@ -6477,7 +6477,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
       }
     }
   }

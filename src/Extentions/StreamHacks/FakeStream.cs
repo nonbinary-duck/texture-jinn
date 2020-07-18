@@ -96,8 +96,6 @@ namespace TextureJinn.Extentions.StreamHacks
         {
             m_WriteQue.Enqueue(() =>
             {
-                count = 131072;
-
                 buffer = buffer.AsMemory().Slice(offset, count).ToArray();
 
                 byte[] newData = new byte[m_Data.Length + count];
@@ -105,7 +103,7 @@ namespace TextureJinn.Extentions.StreamHacks
                 m_Data.CopyTo(newData);
                 buffer.AsMemory().CopyTo(newData);
 
-                m_Data = newData;
+                m_Data = newData.AsMemory();
 
                 Position += count;
             });

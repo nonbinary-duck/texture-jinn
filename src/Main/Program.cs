@@ -1,6 +1,8 @@
 using System;
 using System.IO;
 
+using SkiaSharp;
+
 using TextureJinn.Rendering.Windowing;
 using TextureJinn.Rendering.Rasterisation.SVG;
 
@@ -26,7 +28,7 @@ namespace TextureJinn
 
             for (int i = 0; i < 1; i++)
             {
-                svg.Render(new Rendering.Rasterisation.Vector2Di(10000, 10000));                
+                svg.Render(new Rendering.Rasterisation.Vector2Di(1000, 1000), "test.png", SKEncodedImageFormat.Png);
             }
 
             DateTime end = DateTime.Now;
