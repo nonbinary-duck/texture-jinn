@@ -25,8 +25,6 @@ namespace TextureJinn
             InstallTypefaces.s_TypefaceQue.Enqueue("Assets/Fonts/Temp");
             InstallTypefaces.Install();
 
-            
-
             RenderSvg svg = new RenderSvg("Assets/Images/Vector Images/SplashBase.svg");
 
             DateTime start = DateTime.Now;
