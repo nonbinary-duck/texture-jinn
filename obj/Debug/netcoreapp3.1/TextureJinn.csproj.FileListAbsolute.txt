@@ -52,7 +52,6 @@
 /media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/bin/Debug/netcoreapp3.1/SharpGen.Runtime.dll
 /media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/bin/Debug/netcoreapp3.1/SharpGen.Runtime.COM.dll
 /media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/bin/Debug/netcoreapp3.1/SkiaSharp.dll
-/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/bin/Debug/netcoreapp3.1/SkiaSharp.Extended.Svg.dll
 /media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/bin/Debug/netcoreapp3.1/Splat.dll
 /media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/bin/Debug/netcoreapp3.1/System.Drawing.Common.dll
 /media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/bin/Debug/netcoreapp3.1/Tmds.DBus.dll

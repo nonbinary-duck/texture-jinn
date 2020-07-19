@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aBrjYuaFkINAcmK0fRpTYBkkLy2puxcmw6NeKlQvcd/rw6iu8VZYwIGmeYXcwVOgqjVfoBtnPh9PL2MHBz8ifQ==",
+  "dgSpecHash": "00EJHIGMGWPEUDBXs0SqUJ8Ai+WuXhX1dXb+k/FfnlNcMBlcsznyktmBcD2u/b1Pb98GzIGVI4TPfk3zYDmsCg==",
   "success": true,
   "projectFilePath": "/media/aidan/Fred7/The Department Of Goldbrickery/Raw Code/TextureJinn/TextureJinn.csproj",
   "expectedPackageFiles": [
@@ -56,7 +56,6 @@
     "/home/aidan/.nuget/packages/skiasharp/1.68.2.1/skiasharp.1.68.2.1.nupkg.sha512",
     "/home/aidan/.nuget/packages/skiasharp.harfbuzz/1.68.2.1/skiasharp.harfbuzz.1.68.2.1.nupkg.sha512",
     "/home/aidan/.nuget/packages/skiasharp.nativeassets.linux/1.68.2.1/skiasharp.nativeassets.linux.1.68.2.1.nupkg.sha512",
-    "/home/aidan/.nuget/packages/skiasharp.svg/1.60.0/skiasharp.svg.1.60.0.nupkg.sha512",
     "/home/aidan/.nuget/packages/splat/9.0.5/splat.9.0.5.nupkg.sha512",
     "/home/aidan/.nuget/packages/svg.custom/0.3.0/svg.custom.0.3.0.nupkg.sha512",
     "/home/aidan/.nuget/packages/svg.skia/0.3.0/svg.skia.0.3.0.nupkg.sha512",

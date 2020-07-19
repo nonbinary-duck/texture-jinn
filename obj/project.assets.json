@@ -792,18 +792,6 @@
           }
         }
       },
-      "SkiaSharp.Svg/1.60.0": {
-        "type": "package",
-        "dependencies": {
-          "SkiaSharp": "1.60.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/SkiaSharp.Extended.Svg.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/SkiaSharp.Extended.Svg.dll": {}
-        }
-      },
       "Splat/9.0.5": {
         "type": "package",
         "compile": {
@@ -2962,20 +2950,6 @@
         "runtimes/linux-x64/native/libSkiaSharp.so",
         "skiasharp.nativeassets.linux.1.68.2.1.nupkg.sha512",
         "skiasharp.nativeassets.linux.nuspec"
-      ]
-    },
-    "SkiaSharp.Svg/1.60.0": {
-      "sha512": "rTneyM6mt0w2xCCampFlkO3mGFIwGEJo7L2X3JOdyeMCZDQkyqv7m9kZfA89kLSErXErFnY72TZsryzqTIiT7g==",
-      "type": "package",
-      "path": "skiasharp.svg/1.60.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard1.3/SkiaSharp.Extended.Svg.dll",
-        "lib/netstandard2.0/SkiaSharp.Extended.Svg.dll",
-        "lib/portable-net45+win8+wp8+wpa81/SkiaSharp.Extended.Svg.dll",
-        "skiasharp.svg.1.60.0.nupkg.sha512",
-        "skiasharp.svg.nuspec"
       ]
     },
     "Splat/9.0.5": {
@@ -6394,7 +6368,6 @@
       "Avalonia.Native >= 0.10.0-preview1",
       "Avalonia.ReactiveUI >= 0.10.0-preview1",
       "OpenTK >= 4.0.0-pre9.1",
-      "SkiaSharp.Svg >= 1.60.0",
       "Svg.Skia >= 0.3.0"
     ]
   },
@@ -6452,10 +6425,6 @@
           "OpenTK": {
             "target": "Package",
             "version": "[4.0.0-pre9.1, )"
-          },
-          "SkiaSharp.Svg": {
-            "target": "Package",
-            "version": "[1.60.0, )"
           },
           "Svg.Skia": {
             "target": "Package",

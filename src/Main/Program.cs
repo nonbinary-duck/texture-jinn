@@ -22,7 +22,8 @@ namespace TextureJinn
 
             // Console.WriteLine("Window closed".Append2PadSep());
 
-            InstallTypefaces.s_TypefaceQue.Enqueue("Assets/Fonts/Temp");
+            InstallTypefaces.s_TypefaceQue.Enqueue("Assets/Fonts/Quantico");
+            // InstallTypefaces.s_TypefaceQue.Enqueue("Assets/Fonts/Temp");
             InstallTypefaces.Install();
 
             RenderSvg svg = new RenderSvg("Assets/Images/Vector Images/SplashBase.svg");

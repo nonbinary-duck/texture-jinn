@@ -56,10 +56,6 @@
               "target": "Package",
               "version": "[4.0.0-pre9.1, )"
             },
-            "SkiaSharp.Svg": {
-              "target": "Package",
-              "version": "[1.60.0, )"
-            },
             "Svg.Skia": {
               "target": "Package",
               "version": "[0.3.0, )"
