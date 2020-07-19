@@ -26,6 +26,10 @@ Anything beyond parallel mathematical functions (e.g. Perlin noise, math, Vorono
 
 Nodes will be automatically marked as baked but it is possible to manually mark nodes as baked, but manually assigning a node as baked will result in a loss of animation fidelity.
 
+#### Vertex shaders and 3D model manipulation
+
+I plan on the program having built-in functionality with vertex shaders, tesselation and a marching cube algorithm, both with the intention making it very easy to create procedural 3D terrain in TextureJinn.
+
 #### API
 
 There will be a general C# api and one built optimised for use in unity 3d.
