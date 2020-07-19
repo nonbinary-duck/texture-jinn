@@ -22,13 +22,18 @@ namespace TextureJinn
 
             // Console.WriteLine("Window closed".Append2PadSep());
 
+            InstallTypefaces.s_TypefaceQue.Enqueue("Assets/Fonts/Temp");
+            InstallTypefaces.Install();
+
+            
+
             RenderSvg svg = new RenderSvg("Assets/Images/Vector Images/SplashBase.svg");
 
             DateTime start = DateTime.Now;
 
             for (int i = 0; i < 1; i++)
             {
-                svg.Render(new Rendering.Rasterisation.Vector2Di(1000, 1000), "test.bmp", SKEncodedImageFormat.Bmp);
+                svg.Render(new Rendering.Rasterisation.Vector2Di(-1, 720), "test.png", SKEncodedImageFormat.Png);
             }
 
             DateTime end = DateTime.Now;

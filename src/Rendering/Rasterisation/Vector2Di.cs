@@ -1,3 +1,6 @@
+using System;
+
+
 namespace TextureJinn.Rendering.Rasterisation
 {
     public class Vector2Di : IVector2D<int>
@@ -9,6 +12,12 @@ namespace TextureJinn.Rendering.Rasterisation
         {
             X = x;
             Y = y;
+        }
+
+        public Vector2Di(float x, float y)
+        {
+            X = (int)Math.Floor(x);
+            Y = (int)Math.Floor(y);
         }
 
         public Vector2Di()

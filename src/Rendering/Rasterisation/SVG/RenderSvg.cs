@@ -30,28 +30,35 @@ namespace TextureJinn.Rendering.Rasterisation.SVG
         /// <returns>A stream of data containing the formatted bitmap</returns>
         public FakeStream Render(string data, Vector2Di size, SKEncodedImageFormat format = SKEncodedImageFormat.Bmp)
         {
-            FakeUTF8Stream stream = new FakeUTF8Stream(data);
-
             using (var svg = new Svg.Skia.SKSvg())
             {
-                svg.Load(stream);
+                svg.FromSvg(m_SvgData);
 
                 FakeStream output = new FakeStream();
 
-                Vector2Di scale = new Vector2Di();
-                Vector2D renderedSize = new Vector2Di(svg.Picture.CullRect.Size.Width, svg.Picture.CullRect.Size.Height);
+                Vector2D scale;
+                Vector2D renderedSize = new Vector2D(svg.Picture.CullRect.Size.Width, svg.Picture.CullRect.Size.Height);
 
                 if (size.X == -1)
                 {
-                    float sFac = 
+                    float sFac = size.Y / renderedSize.Y;
+                    scale = new Vector2D(sFac, sFac);
+                }
+                else if (size.Y == -1)
+                {
+                    float sFac = size.X / renderedSize.X;
+                    scale = new Vector2D(sFac, sFac);
+                }
+                else
+                {
+                    scale = new Vector2D(size.X / renderedSize.X, size.Y / renderedSize.Y);
                 }
 
-                SKImage image = SKImage.FromBitmap(svg.Picture.ToBitmap(SKColor.Empty, 3f, 3f, SKColorType.Rgba8888, SKAlphaType.Premul));
-                image.Encode(format, 100).SaveTo(output);
-                System.Console.WriteLine(output.Length);
+                SKImage image = SKImage.FromBitmap(svg.Picture.ToBitmap(SKColor.Empty, scale.X, scale.Y, SKColorType.Rgba8888, SKAlphaType.Premul));
+                image.Encode(format, 0).SaveTo(output);
 
                 // svg.Save(output, SKColor.Empty, format, 100, 1f, 1f);
-                
+
                 output.Position = 0;
                 return output;
             }
