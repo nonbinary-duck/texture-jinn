@@ -22,17 +22,17 @@ namespace TextureJinn
 
             // Console.WriteLine("Window closed".Append2PadSep());
 
-            InstallTypefaces.s_TypefaceQue.Enqueue("Assets/Fonts/Quantico");
-            // InstallTypefaces.s_TypefaceQue.Enqueue("Assets/Fonts/Temp");
+            // InstallTypefaces.s_TypefaceQue.Enqueue("Assets/Fonts/Quantico");
             InstallTypefaces.Install();
 
-            RenderSvg svg = new RenderSvg("Assets/Images/Vector Images/SplashBase.svg");
+            SvgRenderer svg = new SvgRenderer("Assets/Images/Vector Images/SplashBase.svg");
 
             DateTime start = DateTime.Now;
 
+            
             for (int i = 0; i < 1; i++)
             {
-                svg.Render(new Rendering.Rasterisation.Vector2Di(-1, 720), "test.png", SKEncodedImageFormat.Png);
+                svg.Render(new Rendering.Rasterisation.Vector2Di(9080, -1), "test.png", SKEncodedImageFormat.Png);
             }
 
             DateTime end = DateTime.Now;
