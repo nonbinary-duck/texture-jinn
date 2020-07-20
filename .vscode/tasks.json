@@ -14,13 +14,13 @@
             ],
             "problemMatcher": "$msCompile"
         },
-        // {
-        //     "label": "test-",
-        //     "group": "build",
-        //     "command": "cd tests && dotnet test",
-        //     "type": "shell",
-        //     "problemMatcher": "$msCompile"
-        // },
+        {
+            "label": "build-linux64-osx64-win64",
+            "group": "build",
+            "command": "dotnet publish -r linux-x64 && dotnet publish -r win-x64 && dotnet publish -r osx-x64 && rm -rf obj/ && dotnet restore",
+            "type": "shell",
+            "problemMatcher": "$msCompile"
+        },
         {
             "label": "publish",
             "command": "dotnet",
