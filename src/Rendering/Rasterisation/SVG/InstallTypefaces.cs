@@ -1,4 +1,5 @@
 using Svg.Skia;
+using SkiaSharp;
 
 using System.IO;
 using System.Linq;
@@ -48,12 +49,7 @@ namespace TextureJinn.Rendering.Rasterisation.SVG
             {
                 if (File.Exists(path))
                 {
-                    // FontManagerTypefacerovider type = new FontManagerTypefacerovider();
-                    System.Console.WriteLine("Added " + path);
-                    // SKSvgSettings.s_typefaceProviders.Insert(0, new CustomTypefaceProvider(path));
                     SKSvgSettings.s_typefaceProviders.Add(new CustomTypefaceProvider(path));
-                    // SKSvgSettings.s_typefaceProviders.Add(type.CreateTypeface(path));
-                    Svg.SvgFontManager.LoadFontFamily(path);
                 }
             }
         }

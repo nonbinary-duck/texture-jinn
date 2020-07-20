@@ -15,30 +15,22 @@ namespace TextureJinn.Extentions.StreamHacks
         protected bool m_isWriting { get; set; }
         protected Queue<Action> m_WriteQue = new Queue<Action>();
 
+        public byte[] Data { get => m_Data.ToArray(); }
         public override long Position { get; set; }
         public override long Length => m_Data.Length;
         public int iLength => m_Data.Length;
-        public int iPosition { get => (int)Position; }
+        public int iPosition { get => (int)Position; set => Position = value; }
         public override bool CanRead { get => true; }
         public override bool CanSeek { get => true; }
         public override bool CanWrite { get => true; }
+
+        private int writeNumber = 0;
 
         public FakeStream() { }
 
         public FakeStream(byte[] data)
         {
             m_Data = data.AsMemory();
-        }
-
-
-        protected void CalculatePositions(int origin, int count, out int endPos, out int startPos, out int len)
-        {
-            // Allow for a negative count, no idea if filestream has something similar
-            endPos = origin + count;
-            startPos = Math.Min(endPos, origin);
-            if (startPos < 0) throw new IndexOutOfRangeException("startPos on read is negative");
-            endPos = Math.Max(endPos, origin);
-            len = Math.Min(endPos - startPos, m_Data.Length - startPos);
         }
 
         public override void Flush()
@@ -48,23 +40,18 @@ namespace TextureJinn.Extentions.StreamHacks
 
         public override int Read(byte[] buffer, int offset, int count)
         {
-            offset += iPosition;
+            count = Math.Min(count, m_Data.Length - iPosition);
 
-            int endPos, startPos, len;
-            CalculatePositions(offset, count, out endPos, out startPos, out len);
-            if (startPos >= m_Data.Length) return 0;
+            byte[] accessed = m_Data.Slice(iPosition, count).ToArray();
 
-            // buffer = m_Data.Slice(startPos, len).ToArray();
-            byte[] nBuffer = m_Data.Slice(startPos, len).ToArray();
-
-            for (int i = 0; i < len; i++)
+            for (int i = 0; i < count; i++)
             {
-                buffer[i] = nBuffer[i];
+                buffer[i + offset] = accessed[i];
             }
 
-            Position += len;
+            Position += count;
 
-            return len;
+            return count;
         }
 
         public override long Seek(long offset, SeekOrigin origin)
@@ -96,14 +83,14 @@ namespace TextureJinn.Extentions.StreamHacks
         {
             m_WriteQue.Enqueue(() =>
             {
-                buffer = buffer.AsMemory().Slice(offset, count).ToArray();
+                byte[] newData = buffer.AsMemory().Slice(offset, count).ToArray();
 
-                byte[] newData = new byte[m_Data.Length + count];
+                List<byte> newMData = new List<byte>();
 
-                m_Data.CopyTo(newData);
-                buffer.AsMemory().CopyTo(newData);
+                newMData.AddRange(m_Data.ToArray());
+                newMData.AddRange(newData);
 
-                m_Data = newData.AsMemory();
+                m_Data = newMData.ToArray();
 
                 Position += count;
             });
