@@ -24,8 +24,6 @@ namespace TextureJinn.Extentions.StreamHacks
         public override bool CanSeek { get => true; }
         public override bool CanWrite { get => true; }
 
-        private int writeNumber = 0;
-
         public FakeStream() { }
 
         public FakeStream(byte[] data)
