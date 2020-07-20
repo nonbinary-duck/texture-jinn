@@ -30,9 +30,9 @@ namespace TextureJinn
             DateTime start = DateTime.Now;
 
             
-            for (int i = 0; i < 1; i++)
+            for (int i = 0; i < 1000; i++)
             {
-                svg.Render(new Rendering.Rasterisation.Vector2Di(9080, -1), "test.png", SKEncodedImageFormat.Png);
+                svg.Render(new Rendering.Rasterisation.Vector2Di(750, 750));
             }
 
             DateTime end = DateTime.Now;
