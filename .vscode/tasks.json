@@ -2,10 +2,30 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "DelLocal",
+            "type": "shell",
+            "command": "rm -rf ~/.local/share/TextureJinn",
+            "problemMatcher": []
+        },
+        {
+            "label": "MakeLocal",
+            "type": "shell",
+            "command": "mkdir -p ~/.local/share/TextureJinn/",
+            "problemMatcher": []
+        },
+        {
+            "label": "CopyAssets",
+            "type": "shell",
+            "command": "cp -r Assets ~/.local/share/TextureJinn/",
+            "problemMatcher": []
+        },
+        {
             "label": "build",
             "group": "build",
             "command": "dotnet",
             "type": "process",
+            "dependsOn": ["DelLocal", "MakeLocal", "CopyAssets"],
+            "dependsOrder": "sequence",
             "args": [
                 "build",
                 "${workspaceFolder}/TextureJinn.csproj",
