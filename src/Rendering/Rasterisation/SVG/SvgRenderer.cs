@@ -25,21 +25,17 @@ namespace TextureJinn.Rendering.Rasterisation.SVG
         /// </summary>
         /// <param name="size">The size of the bitmap. Accepts -1 for aspect-ratio preserving values</param>
         /// <returns></returns>
-        public SKBitmap Render(Vector2Di size) {
-            return Render(m_SvgData, size);
-        }
-
-        public static SKBitmap Render(string data, Vector2Di size)
+        public SKBitmap Render(Vector2Di size)
         {
             using (var svg = new Svg.Skia.SKSvg())
             {
-                svg.FromSvg(data);
-                
+                svg.FromSvg(m_SvgData);
+
                 Vector2D refSize = new Vector2D(svg.Picture.CullRect.Size.Width, svg.Picture.CullRect.Size.Height);
                 sm_CalculateSize(ref size, refSize);
-                
+
                 SKBitmap bitmap = new SKBitmap(size.X, size.Y, SKColorType.Rgba8888, SKAlphaType.Premul);
-                
+
                 using (SKCanvas canvas = new SKCanvas(bitmap))
                 {
                     SKMatrix neo = SKMatrix.CreateScale(size.X / refSize.X, size.Y / refSize.Y);
@@ -54,15 +50,14 @@ namespace TextureJinn.Rendering.Rasterisation.SVG
         /// <summary>
         /// Rasterizes an svg image to a bitmap of the given format
         /// </summary>
-        /// <param name="data">The svg as text</param>
         /// <param name="size">The size of the bitmap</param>
         /// <param name="format">The format to rasterize the image in</param>
         /// <returns>A stream of data containing the formatted bitmap</returns>
-        public static FakeStream Render(string data, Vector2Di size, SKEncodedImageFormat format)
+        public FakeStream Render(Vector2Di size, SKEncodedImageFormat format)
         {
             FakeStream output = new FakeStream();
 
-            SKBitmap bitmap = Render(data, size);
+            SKBitmap bitmap = Render(size);
 
             SKImage.FromBitmap(bitmap).Encode(format, 100).SaveTo(output);
 
@@ -74,12 +69,11 @@ namespace TextureJinn.Rendering.Rasterisation.SVG
         /// Rasterizes an svg image to a bitmap of the given format
         /// </summary>
         /// <param name="path">The path to save the image to</param>
-        /// <param name="data">The svg as text</param>
         /// <param name="size">The size of the bitmap</param>
         /// <param name="format">The format to rasterize the image in</param>
-        public static void Render(string data, Vector2Di size, string path, SKEncodedImageFormat format = SKEncodedImageFormat.Png)
+        public void Render(Vector2Di size, string path, SKEncodedImageFormat format = SKEncodedImageFormat.Png)
         {
-            FakeStream output = Render(data, size, format);
+            FakeStream output = Render(size, format);
 
             if (File.Exists(path)) File.Delete(path);
 
@@ -89,28 +83,6 @@ namespace TextureJinn.Rendering.Rasterisation.SVG
                 output.Read(out_data);
                 file.Write(out_data);
             }
-        }
-
-        /// <summary>
-        /// Rasterizes an svg using the already stored svg data with the given format
-        /// </summary>
-        /// <param name="size">The size of the bitmap</param>
-        /// <param name="format">The format of the data</param>
-        /// <returns>A stream containing the image</returns>
-        public FakeStream Render(Vector2Di size, SKEncodedImageFormat format)
-        {
-            return Render(m_SvgData, size, format);
-        }
-
-        /// <summary>
-        /// Rasterizes an svg using the already stored svg data to a path with the given format
-        /// </summary>
-        /// <param name="size">The size of the bitmap</param>
-        /// <param name="path">The path to render the svg to</param>
-        /// <param name="format">The format in which to save the the image</param>
-        public void Render(Vector2Di size, string path, SKEncodedImageFormat format = SKEncodedImageFormat.Png)
-        {
-            Render(m_SvgData, size, path, format);
         }
 
         protected static void sm_CalculateSize(ref Vector2Di size, Vector2D origin)

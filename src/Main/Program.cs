@@ -22,10 +22,10 @@ namespace TextureJinn
 
             // Console.WriteLine("Window closed".Append2PadSep());
 
-            // InstallTypefaces.s_TypefaceQue.Enqueue("Assets/Fonts/Quantico");
+            InstallTypefaces.s_TypefaceQue.Enqueue("Assets/Fonts/Quantico".PrependCfgDir());
             InstallTypefaces.Install();
 
-            SvgRenderer svg = new SvgRenderer("Assets/Images/Vector Images/SplashBase.svg");
+            SvgRenderer svg = new SvgRenderer("Assets/Images/Vector Images/SplashBase.svg".PrependCfgDir());
 
             DateTime start = DateTime.Now;
 
