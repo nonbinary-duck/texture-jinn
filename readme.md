@@ -47,3 +47,9 @@ The srp will split all meshes in the scene down into constant size chunks which 
 This will create a 3D model split into chunks which can be swapped out for lower or higher resolution chunks (chunks that are bigger, they will still have the same (ish) number of vertices) as the camera gets further or closer to the object.
 
 The srp will also perform ray traced gi in a dynamic resolution voxel-based system.
+
+## Building contributing etc.
+
+Building using vscode will only work in unix oses bc of preBuild.sh. Building requires you to copy the assets path to $localAppData/TextureJinn/, with that you should be able to run it ok, I hope.
+
+Btw, plz don't create pull requests until like I'm at least at release 0.1.0 or something where I actually have a project cause rn it's hella not worth your time.
