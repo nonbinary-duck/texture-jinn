@@ -50,6 +50,6 @@ The srp will also perform ray traced gi in a dynamic resolution voxel-based syst
 
 ## Building contributing etc.
 
-Building using vscode will only work in unix oses bc of preBuild.sh. Building requires you to copy the assets path to $localAppData/TextureJinn/, with that you should be able to run it ok, I hope.
+Building using vscode will only work in unix oses because of preBuild.sh. Building requires you to copy the Assets/ path to $localAppData/TextureJinn/, with that you should be able to run it ok, I hope.
 
-Btw, plz don't create pull requests until like I'm at least at release 0.1.0 or something where I actually have a project cause rn it's hella not worth your time.
+Btw, please don't create pull requests until I'm at least at release 0.1.0 so I actually have a project cause right now it's hella not worth your time.
