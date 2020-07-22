@@ -3,7 +3,9 @@ using System.IO;
 
 using SkiaSharp;
 
-using TextureJinn.Rendering.Windowing;
+using TextureJinn.Config;
+
+using TextureJinn.Rendering.Rasterisation;
 using TextureJinn.Rendering.Rasterisation.SVG;
 
 using TextureJinn.Extentions.StringHacks;
@@ -22,22 +24,25 @@ namespace TextureJinn
 
             // Console.WriteLine("Window closed".Append2PadSep());
 
-            InstallTypefaces.s_TypefaceQue.Enqueue("Assets/Fonts/Quantico".PrependCfgDir());
-            InstallTypefaces.Install();
+            TypefaceManager.s_TypefaceQue.Enqueue("Quantico");
+            TypefaceManager.s_Install();
 
-            SvgRenderer svg = new SvgRenderer("Assets/Images/Vector Images/SplashBase.svg".PrependCfgDir());
+            SvgRenderer svg = TJCfg.Svgs.GetSvg("SplashBase.svg");
 
-            DateTime start = DateTime.Now;
+            svg.SaveBitmap(svg.Render(new Vector2Di(-1, 2048)), "test.png");
 
+            string data = File.ReadAllText("SplashBase.svg".PrependVectorDir());
             
-            for (int i = 0; i < 1000; i++)
+            data = data.Replace("tj_text_s:2", TJCfg.TJVersion.VerNum);
+            data = data.Replace("tj_text_s:1", TJCfg.FunFact);
+
+            for (int i = 0; i < 850; i++)
             {
-                svg.Render(new Rendering.Rasterisation.Vector2Di(750, 750));
+                Console.WriteLine(TJCfg.FunFact);
             }
 
-            DateTime end = DateTime.Now;
-
-            Console.WriteLine((end - start).TotalSeconds);
+            svg = new SvgRenderer(data, false);
+            svg.Render(new Vector2Di(-1, 2048), "test2.png");
         }
     }
 }
