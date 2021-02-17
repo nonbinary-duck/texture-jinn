@@ -1,55 +1,29 @@
 # Texture Jinn
 
-## About
+A node-based prodecural texture editor to be built using the same framework I will build the game engine in.
 
-This is a project aiming to provide an intuitive node-based editor for texturing and vertex shaders.
+Performant 'textures' above all else. This will be deeply integrated into my game engine.
 
-*yawn*
-
-### Reason
+## Reason
 
 I've been wanting to make this ever since Unity removed their implementation of sbsar and replaced it with the terrible substance plugin. The substance plugin doesn't work in linux and doesn't let you edit sbsar data such as exposed variables at runtime.
 
 The goal is for it to be a semi-viable alternative to substance designer and painter with a load of optimizations and extra features with a very good api.
 
-### Features
+I no longer want to optimise this directly for Unity. I would much rather have my own very open game engine and build it on the same Vulkan framework as that.
 
-#### Compute Shaders
+I suppose I'll create a Unity library when I've got it started.
 
-The rendering will be done on the gpu with compute shaders where possible. The compute shaders will be compiled uniquely by the application to have the least interaction with cpu/ram as possible for better performance.
+## Features
 
-#### Animation
+### Compute Shaders
 
-It will be possible to create performant animated textures capable of being used in runtime applications. I isn't a good idea to create animated textures that rely on constantly rasterising data.
+Packed full of them. I will build this thinking about how I can minimise interactoins between CPU and RAM and the GPU. Perhaps that will involve compiling 'textures' into a single compute shader to be rendered at once. This would definately make the 'texture' render as fast as posible but could have implications with stuttering.
 
-Anything beyond parallel mathematical functions (e.g. Perlin noise, math, Voronoi noise) will have a noticeable impact on performance.
+### Animation
 
-Nodes will be automatically marked as baked but it is possible to manually mark nodes as baked, but manually assigning a node as baked will result in a loss of animation fidelity.
+The whole idea is a 'texture' which is performantly rendered so with ligher 'textures' you could expect to render it at a high framerate.
 
-#### Vertex shaders and 3D model manipulation
+### API
 
-I plan on the program having built-in functionality with vertex shaders, tesselation and a marching cube algorithm, both with the intention making it very easy to create procedural 3D terrain in TextureJinn.
-
-#### API
-
-There will be a general C# api and one built optimised for use in unity 3d.
-
-## Future use
-
-### SRP
-
-My plan is to build a voxelated unity srp with realtime gi and dynamically rendered LOD with TextureJinn at its heart (for rendering textures at different resolutions).
-
-The goal of the srp is to be able to create a scene of never before seen geometry and textures at runtime but it look nearly as good as if it was baked in the unity editor whilst being as performant as if it was.
-
-The srp will split all meshes in the scene down into constant size chunks which are then split `n` number of times, keeping the number of vertices in every level of detail the same (ish, math is hard).
-
-This will create a 3D model split into chunks which can be swapped out for lower or higher resolution chunks (chunks that are bigger, they will still have the same (ish) number of vertices) as the camera gets further or closer to the object.
-
-The srp will also perform ray traced gi in a dynamic resolution voxel-based system.
-
-## Building contributing etc.
-
-Building using vscode will only work in unix oses because of preBuild.sh. Building requires you to copy the Assets/ path to $localAppData/TextureJinn/, with that you should be able to run it ok, I hope.
-
-Btw, please don't create pull requests until I'm at least at release 0.1.0 so I actually have a project cause right now it's hella not worth your time.
+To integrate it into other projects. This is iffy at best.
